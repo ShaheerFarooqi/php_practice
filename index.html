@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .form_main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form fieldset {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        form legend {
+            font-size: 24px;
+            line-height: 1.2;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form input {
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: 300;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border: none;
+            outline: none;
+            background: transparent !important;
+            background-color: transparent !important;
+            border-bottom: 1px solid #000;
+        }
+
+        form input#submit {
+            background-color: blue !important;
+            color: #fff;
+            width: fit-content;
+            margin: 0 auto;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form_main">
+        <form action="create.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>data submit</legend>
+                <input type="text" autocomplete="off" placeholder="Name" name="name" id="name">
+                <input type="email" autocomplete="off" placeholder="email" name="email" id="email">
+                <input type="password" autocomplete="off" placeholder="password" name="password" id="password">
+                <input type="submit" name="submit" id="submit">
+                <a href="view.php">View Records</a>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>
